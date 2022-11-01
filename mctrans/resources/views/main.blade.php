@@ -6,7 +6,7 @@
 
 
 
-            <div class="single-slider slider-height pos-rel d-flex align-items-center" data-background="{{ asset('MCTRANS/storage/app/public/'.$main->image) }}">
+            <div class="single-slider slider-height pos-rel d-flex align-items-center" data-background="{{ asset('mctrans/storage/app/public/'.$main->image) }}">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-7 col-lg-8">
@@ -82,7 +82,7 @@
                                                     {!! $providerAbout->about_text_rus !!}
                                                     @endif
                                                 </p>
-                                                
+
                                                 <div class="about-btn pt-20">
                                                     <a href="{{ route('contact') }}" class="thm-btn">
                                                         @if (app()->getLocale()=="ka")
@@ -143,10 +143,10 @@
                 <div class="col-xl-4 col-lg-4 col-md-6">
                     <div class="single-blog mb-30">
                         <div class="blog-thumb">
-                            <img src="{{ asset('MCTRANS/storage/app/public/'.$newess->image) }}" width="370px" height="260px" alt="image_not_found">
+                            <img src="{{ asset('mctrans/storage/app/public/'.$newess->image) }}" width="370px" height="260px" alt="image_not_found">
                         </div>
                         <div class="b-content">
-                            
+
                             <div class="b-text mb-15">
                                 <h3><a href="{{ route('news_detail' , $newess->news_id) }}">{{ Str::limit( $newess->news_title_geo , 23, '...') }}</a></h3>
                             </div>
@@ -161,10 +161,10 @@
                 <div class="col-xl-4 col-lg-4 col-md-6">
                     <div class="single-blog mb-30">
                         <div class="blog-thumb">
-                            <img src="{{ asset('MCTRANS/storage/app/public/'.$newess->image) }}" width="370px" height="260px" alt="image_not_found">
+                            <img src="{{ asset('mctrans/storage/app/public/'.$newess->image) }}" width="370px" height="260px" alt="image_not_found">
                         </div>
                         <div class="b-content">
-                            
+
                             <div class="b-text mb-15">
                                 <h3><a href="{{ route('news_detail' , $newess->news_id) }}">{{  Str::limit( $newess->news_title_eng , 23, '...')  }}</a></h3>
                             </div>
@@ -179,10 +179,10 @@
                 <div class="col-xl-4 col-lg-4 col-md-6">
                     <div class="single-blog mb-30">
                         <div class="blog-thumb">
-                            <img src="{{ asset('MCTRANS/storage/app/public/'.$newess->image) }}" width="370px" height="260px" alt="image_not_found">
+                            <img src="{{ asset('mctrans/storage/app/public/'.$newess->image) }}" width="370px" height="260px" alt="image_not_found">
                         </div>
                         <div class="b-content">
-                            
+
                             <div class="b-text mb-15">
                                 <h3><a href="{{ route('news_detail' , $newess->news_id) }}">{{ Str::limit( $newess->news_title_rus , 23, '...') }}</a></h3>
                             </div>
@@ -195,7 +195,7 @@
                 @endif
                 @endforeach
                 </div>
-                
+
             </div>
         </section>
         <!-- Blog end -->

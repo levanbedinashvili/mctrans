@@ -33,7 +33,7 @@
                 <div class="col-xl-8 col-lg-8 pr-25">
                     <div class="s-details-single mb-40">
                         <div class="s-details-thumb">
-                            <img src="{{ asset('MCTRANS/storage/app/public/'. $info->image) }}" style="width: 750px; height:500px;" alt="image_not_found">
+                            <img src="{{ asset('mctrans/storage/app/public/'. $info->image) }}" style="width: 750px; height:500px;" alt="image_not_found">
                         </div>
                         <div class="s-details-text">
                             @if (app()->getLocale()=="ka")

@@ -26,7 +26,7 @@
     </div>
 </section>
 <!-- page title area end -->
-            
+
             <!-- Blog start -->
             <section class="blog-area gray-bg pt-120 pb-90">
                 <div class="container">
@@ -36,10 +36,10 @@
                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="single-blog mb-30">
                             <div class="blog-thumb">
-                                <a href="{{ route('news_detail' , $news->news_id) }}"> <img src="{{ asset('MCTRANS/storage/app/public/'.$news->image) }}" width="370px" height="260px" alt="image_not_found"></a>
+                                <a href="{{ route('news_detail' , $news->news_id) }}"> <img src="{{ asset('mctrans/storage/app/public/'.$news->image) }}" width="370px" height="260px" alt="image_not_found"></a>
                             </div>
                             <div class="b-content">
-                                
+
                                 <div class="b-text mb-15">
                                     <h3><a href="{{ route('news_detail' , $news->news_id) }}">{{ Str::limit( $news->news_title_geo , 23, '...') }}</a></h3>
                                 </div>
@@ -54,10 +54,10 @@
                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="single-blog mb-30">
                             <div class="blog-thumb">
-                                <a href="{{ route('news_detail' , $news->news_id) }}"> <img src="{{ asset('MCTRANS/storage/app/public/'.$news->image) }}" width="370px" height="260px" alt="image_not_found"></a>
+                                <a href="{{ route('news_detail' , $news->news_id) }}"> <img src="{{ asset('mctrans/storage/app/public/'.$news->image) }}" width="370px" height="260px" alt="image_not_found"></a>
                             </div>
                             <div class="b-content">
-                                
+
                                 <div class="b-text mb-15">
                                     <h3><a href="{{ route('news_detail' , $news->news_id) }}">{{  Str::limit( $news->news_title_eng , 23, '...')  }}</a></h3>
                                 </div>
@@ -72,10 +72,10 @@
                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="single-blog mb-30">
                             <div class="blog-thumb">
-                                <a href="{{ route('news_detail' , $news->news_id) }}"><img src="{{ asset('MCTRANS/storage/app/public/'.$news->image) }}" width="370px" height="260px" alt="image_not_found"></a>
+                                <a href="{{ route('news_detail' , $news->news_id) }}"><img src="{{ asset('mctrans/storage/app/public/'.$news->image) }}" width="370px" height="260px" alt="image_not_found"></a>
                             </div>
                             <div class="b-content">
-                                
+
                                 <div class="b-text mb-15">
                                     <h3><a href="{{ route('news_detail' , $news->news_id) }}">{{ Str::limit( $news->news_title_rus , 23, '...') }}</a></h3>
                                 </div>

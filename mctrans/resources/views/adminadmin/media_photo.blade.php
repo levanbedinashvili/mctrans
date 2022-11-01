@@ -50,9 +50,9 @@
                 <div class="demo-gallery">
                     <ul id="lightgallery" class="list-unstyled row" lg-uid="lg0">
                         @foreach ($infos as $gallery)
-                        <li class="col-xs-6 col-sm-4 col-md-2" data-responsive="{{ asset('MCTRANS/storage/app/'. $gallery->image) }}" data-src="{{ asset('MCTRANS/storage/app/'. $gallery->image) }}" data-sub-html="<h4>Gallery Image 1</h4><p> Many desktop publishing packages and web page editors now use Lorem Ipsum</p>" lg-event-uid="&amp;1">
+                        <li class="col-xs-6 col-sm-4 col-md-2" data-responsive="{{ asset('mctrans/storage/app/'. $gallery->image) }}" data-src="{{ asset('mctrans/storage/app/'. $gallery->image) }}" data-sub-html="<h4>Gallery Image 1</h4><p> Many desktop publishing packages and web page editors now use Lorem Ipsum</p>" lg-event-uid="&amp;1">
                             <a href="{{ route('admin.media_photo_drop', $gallery->photo_gallery_id ) }}" onclick="return confirm('ნამდვილად გსურთ გალერიიდან ფოტოს წაშლა?')">
-                                <img class="img-responsive" src="{{ asset('MCTRANS/storage/app/'. $gallery->image) }}" alt="Thumb-1" style="width: 235px; height:235px;">
+                                <img class="img-responsive" src="{{ asset('mctrans/storage/app/'. $gallery->image) }}" alt="Thumb-1" style="width: 235px; height:235px;">
                             </a>
                         </li>
                         @endforeach

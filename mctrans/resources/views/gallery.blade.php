@@ -25,7 +25,7 @@
         </div>
     </section>
     <!-- page title area end -->
-    
+
     <!-- Blog start -->
 
     <section class="blog-area gray-bg pt-120 pb-90">
@@ -36,9 +36,9 @@
                     <div class="single-blog mb-30">
 
                         <div class="footer-gallery-item">
-                                <img src="{{ asset('MCTRANS/storage/app/'. $item->image) }}" style="width: 370px; height: 260px;" alt="image_not_found">
+                                <img src="{{ asset('mctrans/storage/app/'. $item->image) }}" style="width: 370px; height: 260px;" alt="image_not_found">
                             <div class="link-img">
-                                <a class="popup-image" href="{{ asset('MCTRANS/storage/app/'. $item->image) }}"></a>
+                                <a class="popup-image" href="{{ asset('mctrans/storage/app/'. $item->image) }}"></a>
                             </div>
                         </div>
                     </div>

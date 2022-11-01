@@ -55,7 +55,7 @@
                 <div class="col-lg-6">
                     <div class="about-right pos-rel">
                         <div class="about-right-thumb">
-                            <img src="{{ asset('MCTRANS/storage/app/public/'.$info->image) }}" style="width:570px; height:511px;" alt="image_not_found">
+                            <img src="{{ asset('mctrans/storage/app/public/'.$info->image) }}" style="width:570px; height:511px;" alt="image_not_found">
                         </div>
                     </div>
                 </div>

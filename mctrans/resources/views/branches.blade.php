@@ -34,7 +34,7 @@
                     <div class="s-details-single mb-40">
                         <div class="s-details-thumb">
                             @if($filiali->image)
-                            <img src="{{ asset('MCTRANS/storage/app/public/'. $filiali->image) }}" style="width: 750px; height:500px;" alt="image_not_found">
+                            <img src="{{ asset('mctrans/storage/app/public/'. $filiali->image) }}" style="width: 750px; height:500px;" alt="image_not_found">
                             @endif
                         </div>
                         <div class="s-details-text">

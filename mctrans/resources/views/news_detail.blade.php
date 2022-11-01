@@ -4,18 +4,18 @@
 @section('url')http://mctrans.ge/news/{{ $news->news_id }}@endsection
 
 @if (app()->getLocale()=="ka")
-@section('title') {{ $news->news_title_geo }} @endsection 
+@section('title') {{ $news->news_title_geo }} @endsection
 @section('description'){!! $news->news_text_geo !!}@endsection
 @endif
 @if (app()->getLocale()=="en")
-@section('title') {{ $news->news_title_eng }} @endsection 
+@section('title') {{ $news->news_title_eng }} @endsection
 @section('description'){!! $news->news_text_eng !!}@endsection
 @endif
 @if (app()->getLocale()=="ru")
-@section('title') {{ $news->news_title_rus }} @endsection 
+@section('title') {{ $news->news_title_rus }} @endsection
 @section('description'){!! $news->news_text_rus !!}@endsection
 @endif
-@section('image'){{ asset('MCTRANS/storage/app/public/'.$news->image) }}@endsection
+@section('image'){{ asset('mctrans/storage/app/public/'.$news->image) }}@endsection
 
 
 
@@ -43,7 +43,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Blog start -->
     <section class="blog-content-area pt-120 pb-80">
         <div class="container">
@@ -55,7 +55,7 @@
                             <div class="post-item mb-40">
                                 <div class="post-inner">
                                     <div class="post-thumb">
-                                        <img src="{{ asset('MCTRANS/storage/app/public/'.$news->image) }}" width="750" height="422" alt="blog">
+                                        <img src="{{ asset('mctrans/storage/app/public/'.$news->image) }}" width="750" height="422" alt="blog">
                                     </div>
                                     <br>
                                     <div class="post-content">
@@ -78,7 +78,7 @@
                             <div class="post-item mb-40">
                                 <div class="post-inner">
                                     <div class="post-thumb">
-                                        <img src="{{ asset('MCTRANS/storage/app/public/'.$news->image) }}" width="750" height="422" alt="blog">
+                                        <img src="{{ asset('mctrans/storage/app/public/'.$news->image) }}" width="750" height="422" alt="blog">
                                     </div>
                                     <br>
                                     <div class="post-content">
@@ -101,7 +101,7 @@
                             <div class="post-item mb-40">
                                 <div class="post-inner">
                                     <div class="post-thumb">
-                                        <img src="{{ asset('MCTRANS/storage/app/public/'.$news->image) }}" width="750" height="422" alt="blog">
+                                        <img src="{{ asset('mctrans/storage/app/public/'.$news->image) }}" width="750" height="422" alt="blog">
                                     </div>
                                     <br>
                                     <div class="post-content">
@@ -119,13 +119,13 @@
                             </div>
                         </article>
                         @endif
-                        
+
                     </div>
-                   
-                 
+
+
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-12">
-                   
+
                     <div class="widget mb-40">
                         <div class="widget-title-box mb-30">
                             <h3 class="widget-title">
@@ -165,7 +165,7 @@
                             @foreach ($last_news as $newss)
                             <li>
                                 <div class="widget-posts-image">
-                                    <a href="#"><img src="{{ asset('MCTRANS/storage/app/public/'.$newss->image) }}" width="90" height="90" alt=""></a>
+                                    <a href="#"><img src="{{ asset('mctrans/storage/app/public/'.$newss->image) }}" width="90" height="90" alt=""></a>
                                 </div>
                                 <div class="widget-posts-body">
                                     @if (app()->getLocale()=="ka")
