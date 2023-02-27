@@ -1,1 +1,1 @@
-💰 A platform to make advertisements using PHP, laravel, Jquery and Ajax
+💰 A platform to help customers choose car to buy using PHP, laravel
